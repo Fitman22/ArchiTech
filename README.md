@@ -15,4 +15,3 @@
 
 
 5. Jose Daniel Figueroa Arenas
-gayyyy
