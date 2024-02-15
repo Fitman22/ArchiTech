@@ -48,6 +48,8 @@ Se implementa la compuerta lógica OR de 16 bits, denominada `Or16`. Esta compue
 
 # OR8WAY
 
+Se implementa la compuerta lógica OR de 8 vías, llamada `Or8Way`. Esta compuerta tiene 8 entradas (`in[8]`) y produce una única salida (`out`). La salida es verdadera (1) si al menos una de las entradas es verdadera (1). Para lograr esto, el código utiliza varias compuertas lógicas OR para realizar la operación OR entre diferentes grupos de entradas. Se agrupan las entradas en pares, y luego se realizan operaciones OR entre los pares de entradas. Posteriormente, se realizan operaciones OR entre los resultados intermedios hasta obtener la salida final.
+
 # MUX4WAY16
 
 # MUX8WAY16
