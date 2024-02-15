@@ -12,7 +12,7 @@ La implementacion de la compuerta lógica NOT se realizo utilizando una compuert
 
 ![image](https://github.com/Fitman22/ArchiTech/assets/124414206/f30a1f16-fd6f-495f-b0d8-64c492bcd029)
 
-La implementacion de la compuerta lógica AND se realizo utilizando dos compuertas NAND. La salida de la primera NAND proporciona la negación de las entradas a y b, y luego la segunda NAND calcula la negación de esa salida, produciendo así el resultado de la operación AND lógica de las entradas a y b.
+La implementacion de la compuerta lógica AND se realizo utilizando dos compuertas NAND. La salida de la primera NAND proporciona la negación de las entradas 'a' y 'b', y luego la segunda NAND calcula la negación de esa salida, produciendo así el resultado de la operación AND lógica de las entradas 'a' y 'b'.
 
 # OR
 
