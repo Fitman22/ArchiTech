@@ -30,6 +30,12 @@ La implementacion de la compuerta lógica XOR (Exclusive OR) se realizo utilizan
 
 # MUX
 
+El chip `Mux` es un multiplexor de 2 vías que toma dos entradas `a` y `b`, y una señal de selección `sel`, y selecciona una de las entradas para dirigirla a la salida `out`, dependiendo del valor de `sel`.
+
+Internamente, el chip `Mux` utiliza una puerta NOT para negar la señal de selección `sel`. Luego, utiliza dos puertas AND para realizar una operación lógica entre la señal de selección negada (`selnegado`) y la entrada `a`, y entre la señal de selección original (`sel`) y la entrada `b`, respectivamente. Estas operaciones lógicas generan dos salidas (`sal1` y `sal2`), que representan las entradas `a` y `b` respectivamente cuando la señal de selección es baja o alta.
+
+Finalmente, estas dos salidas se combinan mediante una puerta OR, donde la salida `out` será igual a `a` cuando `sel` es bajo, y será igual a `b` cuando `sel` es alto.
+
 # DMUX
 
 # NOT16
