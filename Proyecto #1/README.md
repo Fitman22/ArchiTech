@@ -64,7 +64,7 @@ Internamente, el chip utiliza dos chips `Mux4Way16` (multiplexores de 4 vías de
 
 # DMUX4WAY
 
-El chip `DMux4Way` es un demultiplexor de 4 vías. Toma una entrada `in` y la dirige a una de las cuatro salidas (`a`, `b`, `c` y `d`), basándose en dos señales de selección (`sel[0]` y `sel[1]`). Internamente, el chip utiliza dos instancias del chip `DMux` (demultiplexor) para realizar esta operación. El primer `DMux` divide la entrada `in` en dos salidas, `temp1` y `temp2`, basándose en el valor de la señal de selección `sel[1]`. Luego, cada una de estas salidas se divide nuevamente utilizando otro `DMux` basándose en el valor de la señal de selección `sel[0]`. El resultado de estos `DMux` es dirigido a las salidas `a`, `b`, `c` y `d`.
+El chip `DMux4Way` es un demultiplexor de 4 vías. Toma una entrada `in` y la dirige a una de las cuatro salidas (`a`, `b`, `c` y `d`), basándose en dos señales de selección (`sel[0]` y `sel[1]`). Internamente, el chip utiliza dos instancias del chip `DMux` (demultiplexor) para realizar esta operación. El primer `DMux` divide la entrada `in` en dos salidas, `tout1` y `tout2`, basándose en el valor de la señal de selección `sel[1]`. Luego, cada una de estas salidas se divide nuevamente utilizando otro `DMux` basándose en el valor de la señal de selección `sel[0]`. El resultado de estos `DMux` es dirigido a las salidas `a`, `b`, `c` y `d`.
 
 # DMUX8WAY
 
