@@ -68,6 +68,11 @@ El chip `DMux4Way` es un demultiplexor de 4 vías. Toma una entrada `in` y la di
 
 # DMUX8WAY
 
+El chip `DMux8Way` es un demultiplexor de 8 vías. Toma una sola entrada `in` y la dirige a una de las ocho salidas (`a`, `b`, `c`, `d`, `e`, `f`, `g` y `h`) basándose en tres señales de selección (`sel[0]`, `sel[1]` y `sel[2]`). Para lograr esto, el chip utiliza una combinación de puertas lógicas y demultiplexores de menor tamaño. En primer lugar, se niega la señal de selección `sel[0]` utilizando un chip `Not`, y se realiza una operación AND entre la entrada `in` y la señal negada `tsel1`, lo que resulta en la salida `Inout`. Esta señal `Inout` se utiliza para dirigir la entrada a uno de los dos demultiplexores 4-vías (`DMux4Way`), dependiendo de los valores de `sel[1]` y `sel[2]`.
+
+Por otro lado, la entrada `in` se combina con la señal de selección `sel[0]` utilizando una operación AND para producir la señal `In1`, que se utiliza para dirigir la entrada a otro demultiplexor 4-vías en función de los valores de `sel[1]` y `sel[2]`.
+
+
 # PREGUNTAS ADICIONALES
 **1. ¿Qué consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?**
 
