@@ -52,6 +52,10 @@ Se implementa la compuerta lógica OR de 8 vías, llamada `Or8Way`. Esta compuer
 
 # MUX4WAY16
 
+El chip `Mux4Way16` es un multiplexor de 4 vías de 16 bits. Esto significa que toma cuatro conjuntos de datos de entrada, cada uno de 16 bits (`a`, `b`, `c` y `d`), y selecciona uno de estos conjuntos de datos de salida basado en dos señales de selección (`sel[0]` y `sel[1]`). El propósito principal de este chip es seleccionar entre cuatro entradas diferentes (`a`, `b`, `c` y `d`) para dirigir a la salida (`out`), dependiendo de los valores de las señales de selección (`sel[0]` y `sel[1]`). 
+
+Internamente, el chip utiliza tres chips Mux16 (multiplexores de 16 bits) para realizar esta operación. Dos de estos Mux16 se utilizan para seleccionar entre `a` y `b`, y entre `c` y `d`, respectivamente, basándose en el valor de la primera señal de selección (`sel[0]`). Los resultados de estas dos operaciones de multiplexación se almacenan temporalmente en `tout1` y `tout2`. Luego, otro chip Mux16 se utiliza para seleccionar entre `tout1` y `tout2`, dependiendo del valor de la segunda señal de selección (`sel[1]`). El resultado final de esta operación se dirige a la salida `out`.
+
 # MUX8WAY16
 
 # DMUX4WAY
