@@ -7,4 +7,4 @@ En el mundo de la informática y la ingeniería de computadoras, la lógica bool
 # NOT
        
           
-F
+Se implementa una compuerta lógica NOT utilizando una compuerta NAND. La entrada se conecta a ambas entradas de la compuerta NAND, y la salida de la NAND se convierte en la salida de la compuerta NOT, produciendo así la inversión lógica de la entrada.
