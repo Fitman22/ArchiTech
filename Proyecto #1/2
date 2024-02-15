@@ -34,3 +34,32 @@ Chip Mux8Way16 {
     Mux4Way16(a=e, b=f, c=g, d=h, sel=sel[0..1], out=temp2);
     Mux16(a=temp1, b=temp2, sel=sel[2], out=out);
 }
+
+
+
+
+
+
+
+
+Chip DMux4Way {
+    IN in, sel[2]
+    OUT a, b, c, d
+    
+    PARTS:
+    DMux(in=in, sel=sel[1], a=a, b=b);
+    DMux(in=a, sel=sel[0], a=temp1, b=temp2);
+    DMux(in=b, sel=sel[0], a=temp3, b=temp4);
+    DMux(in=c, sel=sel[0], a=temp5, b=temp6);
+    DMux(in=d, sel=sel[0], a=temp7, b=temp8);
+}
+
+
+
+Chip DMux8Way {
+    IN in, sel[3]
+    OUT a, b, c, d, e, f, g, h
+    
+    PARTS:
+    DMux(in=in, sel=sel[2], a=a, b=b);
+    DMux(in=a, sel=sel[1], a=temp1, b=temp
