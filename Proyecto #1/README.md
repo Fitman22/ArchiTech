@@ -56,6 +56,10 @@ Se implementa la compuerta lógica OR de 16 bits, denominada `Or16`. Esta compue
 
 # MUX16
 
+El chip `Mux16` es un multiplexor de 16 vías que toma dos conjuntos de 16 bits de entradas (`a` y `b`) y una señal de selección `sel`, y selecciona uno de los conjuntos de entradas para dirigirlo a la salida correspondiente.
+
+Internamente, el chip `Mux16` utiliza dieciséis instancias del chip `Mux`, una para cada bit de las entradas `a` y `b`. Cada instancia de `Mux` selecciona entre un solo bit de las entradas `a` y `b` basándose en el valor de la señal de selección `sel`, y dirige el resultado al bit correspondiente de la salida `out`.
+
 # OR8WAY
 
 Se implementa la compuerta lógica OR de 8 vías, llamada `Or8Way`. Esta compuerta tiene 8 entradas (`in[8]`) y produce una única salida (`out`). La salida es verdadera (1) si al menos una de las entradas es verdadera (1). Para lograr esto, el código utiliza varias compuertas lógicas OR para realizar la operación OR entre diferentes grupos de entradas. Se agrupan las entradas en pares, y luego se realizan operaciones OR entre los pares de entradas. Posteriormente, se realizan operaciones OR entre los resultados intermedios hasta obtener la salida final.
