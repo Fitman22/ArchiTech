@@ -52,8 +52,6 @@ Se implementa una compuerta lógica de inversión de 16 bits llamada `Not16`. Es
 
 # DMUX8WAY
 
-# PREGUNTAS PRACTICA
-
 # PREGUNTAS ADICIONALES
 **1. ¿Qué consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?**
 
