@@ -38,6 +38,10 @@ Finalmente, estas dos salidas se combinan mediante una puerta OR, donde la salid
 
 # DMUX
 
+El chip `DMux` es un demultiplexor de una vía que toma una entrada `in` y una señal de selección `sel`, y dirige la entrada a una de las dos salidas (`a` o `b`) basándose en el valor de `sel`.
+
+Internamente, el chip `DMux` primero niega la señal de selección `sel` utilizando una puerta NOT. Luego, utiliza dos puertas AND para realizar operaciones lógicas entre la entrada `in` y la señal de selección negada (`selnegado`) y entre la entrada `in` y la señal de selección original (`sel`), respectivamente. Estas operaciones lógicas generan dos salidas (`a` y `b`), donde la salida `a` será igual a la entrada `in` cuando `sel` es baja, y la salida `b` será igual a la entrada `in` cuando `sel` es alta.
+
 # NOT16
 
 Se implementa una compuerta lógica de inversión de 16 bits llamada `Not16`. Esta compuerta toma una entrada de 16 bits (`in[16]`) y produce una salida de 16 bits (`out[16]`), donde cada bit de salida es la inversión lógica del bit correspondiente de la entrada. Para lograr esto, se utilizan 16 compuertas NOT individuales. Cada una de estas compuertas NOT toma un bit de la entrada de 16 bits y produce la inversión lógica de ese bit, que se asigna al bit correspondiente de la salida.
