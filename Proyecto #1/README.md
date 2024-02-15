@@ -6,7 +6,7 @@ En el mundo de la informática y la ingeniería de computadoras, la lógica bool
 
 ![image](https://github.com/Fitman22/ArchiTech/assets/124414206/dcc0a095-bfb8-4ae6-bdf1-3b2a3d48c1d5)
          
-Se implementa una compuerta lógica NOT utilizando una compuerta NAND. La entrada se conecta a ambas entradas de la compuerta NAND, y la salida de la NAND se convierte en la salida de la compuerta NOT, produciendo así la inversión lógica de la entrada.
+La implementacion de la compuerta lógica NOT se realizo utilizando una compuerta NAND. La entrada se conecta a ambas entradas de la compuerta NAND, y la salida de la NAND se convierte en la salida de la compuerta NOT, produciendo así la inversión lógica de la entrada.
 
 # AND
 
@@ -18,5 +18,12 @@ La implementacion de la compuerta lógica AND se realizo utilizando dos compuert
 
 ![image](https://github.com/Fitman22/ArchiTech/assets/124414206/a3c2648f-78e4-4a51-ab3b-8ee93362a8aa)
 
-La compuerta lógica OR se realiza utilizando únicamente compuertas NAND. El enfoque del código es utilizar la propiedad de universalidad de las compuertas NAND, lo que significa que pueden utilizarse para implementar cualquier otra compuerta lógica. Internamente, el código utiliza tres compuertas NAND. La primera compuerta NAND calcula la negación lógica de la entrada a y la segunda compuerta NAND calcula la negación lógica de la entrada b. Luego, la tercera compuerta NAND calcula la negación lógica de las salidas de las dos primeras compuertas NAND, lo que resulta en la operación OR lógica de las entradas a y b.
+La compuerta lógica OR se realizo utilizando únicamente compuertas NAND. El enfoque del código es utilizar la propiedad de universalidad de las compuertas NAND, lo que significa que pueden utilizarse para implementar cualquier otra compuerta lógica. Internamente, el código utiliza tres compuertas NAND. La primera compuerta NAND calcula la negación lógica de la entrada a y la segunda compuerta NAND calcula la negación lógica de la entrada b. Luego, la tercera compuerta NAND calcula la negación lógica de las salidas de las dos primeras compuertas NAND, lo que resulta en la operación OR lógica de las entradas a y b.
 
+# XOR
+
+![image](https://github.com/Fitman22/ArchiTech/assets/124414206/7e1399f3-18fd-48bb-8e44-d44a974c40a2)
+
+Claro, aquí tienes una explicación más detallada del código:
+
+La implementacion de la compuerta lógica XOR (Exclusive OR) se realizo utilizando únicamente compuertas NAND. Primero, se calcula la negación lógica de cada una de las entradas `a` y `b` utilizando dos compuertas NAND. Esto produce las señales negadas `nega` y `negb`. Luego, se utiliza una compuerta NAND para calcular la operación OR lógica entre `a` y `b`, utilizando las señales negadas `nega` y `negb`. Esto produce la señal `orout`. Después, se calcula la negación lógica de la señal `orout` utilizando una compuerta NAND, lo que resulta en la señal negada `negout`. Finalmente, se calcula la operación NAND entre las señales `negout` y `negand` para obtener la salida final de la compuerta XOR.
