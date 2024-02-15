@@ -38,6 +38,8 @@ Se implementa una compuerta lógica de inversión de 16 bits llamada `Not16`. Es
 
 # AND16
 
+Se implementa la compuerta lógica AND de 16 bits, denominada And16. Esta compuerta toma dos entradas de 16 bits (a[16] y b[16]) y produce una salida de 16 bits (out[16]), donde cada bit de salida es el resultado de la operación AND lógica correspondiente entre los bits de entrada. Para lograr esto, el código utiliza 16 compuertas AND individuales (And) para realizar la operación AND entre cada par correspondiente de bits de las entradas a y b. Cada compuerta AND toma un par de bits de las entradas a y b, y produce el resultado correspondiente, que se asigna al bit correspondiente de la salida out.
+
 # OR16
 
 # MUX16
