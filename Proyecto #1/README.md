@@ -42,6 +42,8 @@ Se implementa la compuerta lógica AND de 16 bits, denominada And16. Esta compue
 
 # OR16
 
+Se implementa la compuerta lógica OR de 16 bits, denominada Or16. Esta compuerta toma dos entradas de 16 bits (a[16] y b[16]) y produce una salida de 16 bits (out[16]), donde cada bit de salida es el resultado de la operación OR lógica correspondiente entre los bits de entrada. Para lograr esto, el código utiliza 16 compuertas OR individuales (Or) para realizar la operación OR entre cada par correspondiente de bits de las entradas a y b. Cada compuerta OR toma un par de bits de las entradas a y b, y produce el resultado correspondiente, que se asigna al bit correspondiente de la salida out.
+
 # MUX16
 
 # OR8WAY
