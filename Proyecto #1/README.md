@@ -60,4 +60,5 @@ Se implementa una compuerta lógica de inversión de 16 bits llamada `Not16`. Es
 
 
 2. ¿Que otras herramientas similares a Nand2Tetris existen? 
-3. 
+
+
