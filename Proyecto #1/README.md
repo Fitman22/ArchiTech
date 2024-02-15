@@ -13,3 +13,10 @@ Se implementa una compuerta lógica NOT utilizando una compuerta NAND. La entrad
 ![image](https://github.com/Fitman22/ArchiTech/assets/124414206/f30a1f16-fd6f-495f-b0d8-64c492bcd029)
 
 La implementacion de la compuerta lógica AND se realizo utilizando dos compuertas NAND. La salida de la primera NAND proporciona la negación de las entradas a y b, y luego la segunda NAND calcula la negación de esa salida, produciendo así el resultado de la operación AND lógica de las entradas a y b.
+
+# OR
+
+![image](https://github.com/Fitman22/ArchiTech/assets/124414206/a3c2648f-78e4-4a51-ab3b-8ee93362a8aa)
+
+La compuerta lógica OR se realiza utilizando únicamente compuertas NAND. El enfoque del código es utilizar la propiedad de universalidad de las compuertas NAND, lo que significa que pueden utilizarse para implementar cualquier otra compuerta lógica. Internamente, el código utiliza tres compuertas NAND. La primera compuerta NAND calcula la negación lógica de la entrada a y la segunda compuerta NAND calcula la negación lógica de la entrada b. Luego, la tercera compuerta NAND calcula la negación lógica de las salidas de las dos primeras compuertas NAND, lo que resulta en la operación OR lógica de las entradas a y b.
+
