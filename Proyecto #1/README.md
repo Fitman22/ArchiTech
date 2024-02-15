@@ -58,6 +58,10 @@ Internamente, el chip utiliza tres chips Mux16 (multiplexores de 16 bits) para r
 
 # MUX8WAY16
 
+El chip `Mux8Way16` es un multiplexor de 8 vías de 16 bits. Esto significa que toma ocho conjuntos de datos de entrada, cada uno de 16 bits (`a`, `b`, `c`, `d`, `e`, `f`, `g` y `h`), y selecciona uno de estos conjuntos de datos de salida basado en tres señales de selección (`sel[0]`, `sel[1]` y `sel[2]`). El propósito principal de este chip es seleccionar entre ocho entradas diferentes (`a`, `b`, `c`, `d`, `e`, `f`, `g` y `h`) para dirigir a la salida (`out`), dependiendo de los valores de las señales de selección (`sel[0]`, `sel[1]` y `sel[2]`).
+
+Internamente, el chip utiliza dos chips `Mux4Way16` (multiplexores de 4 vías de 16 bits) para realizar esta operación. El primer `Mux4Way16` selecciona entre los conjuntos de datos `a`, `b`, `c` y `d` basándose en los dos bits más bajos de la señal de selección (`sel[0]` y `sel[1]`), y almacena el resultado temporalmente en `tout1`. El segundo `Mux4Way16` selecciona entre los conjuntos de datos `e`, `f`, `g` y `h` también basándose en los dos bits más bajos de la señal de selección (`sel[0]` y `sel[1]`), y almacena el resultado en `tout2`. Luego, un chip `Mux16` se utiliza para seleccionar entre `tout1` y `tout2`, basándose en el tercer bit de la señal de selección (`sel[2]`). El resultado final de esta operación se dirige a la salida `out`.
+
 # DMUX4WAY
 
 # DMUX8WAY
