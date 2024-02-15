@@ -55,7 +55,7 @@ Se implementa una compuerta lógica de inversión de 16 bits llamada `Not16`. Es
 # PREGUNTAS PRACTICA
 
 # PREGUNTAS ADICIONALES
-**¿Qué consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?**
+**1. ¿Qué consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?**
 
 **Nand2Tetris** es un software que nos ayuda a entender el funcionamiento de las compuertas lógicas. Para poder utilizar este programa de manera satisfactoria, es necesario saber cómo funcionan las compuertas lógicas, ya que se deben crear diversas compuertas como Not, Or, And, entre otras, usando únicamente una compuerta Nand primitiva.
 
@@ -67,7 +67,7 @@ Se implementa una compuerta lógica de inversión de 16 bits llamada `Not16`. Es
 
 Una vez que se entiende este tema, es muy sencillo usar el software de Nand2Tetris. Solo se debe recordar tener la última versión de Java, puesto que trabaja en base a este lenguaje de programación.
 
-**¿Qué otras herramientas similares a Nand2Tetris existen?**
+**2. ¿Qué otras herramientas similares a Nand2Tetris existen?**
 
 Existen diversas herramientas que te ayudan a entender el funcionamiento de un computador, algunas de ellas son:
 
