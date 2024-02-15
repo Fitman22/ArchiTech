@@ -56,9 +56,25 @@ Se implementa una compuerta lógica de inversión de 16 bits llamada `Not16`. Es
 
 # PREGUNTAS ADICIONALES
 
-1. ¿Que consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?
+**¿Qué consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?**
 
+**Nand2Tetris** es un software que nos ayuda a entender el funcionamiento de las compuertas lógicas. Para poder utilizar este programa de manera satisfactoria, es necesario saber cómo funcionan las compuertas lógicas, ya que se deben crear diversas compuertas como Not, Or, And, entre otras, usando únicamente una compuerta Nand primitiva.
 
-2. ¿Que otras herramientas similares a Nand2Tetris existen? 
+**Se debe conocer:**
+
+- Qué bits le deben llegar a cada compuerta para obtener una salida determinada.
+- Con cuál operador binario funciona cada compuerta, si esta trabaja con uno solo o usa varios operadores.
+- Si el resultado de estas operaciones se debe negar, como es el caso de la Nand.
+
+Una vez que se entiende este tema, es muy sencillo usar el software de Nand2Tetris. Solo se debe recordar tener la última versión de Java, puesto que trabaja en base a este lenguaje de programación.
+
+**¿Qué otras herramientas similares a Nand2Tetris existen?**
+
+Existen diversas herramientas que te ayudan a entender el funcionamiento de un computador, algunas de ellas son:
+
+- **LC-3 Simulator:** Es un computador educativo de 16 bits diseñado para enseñar los fundamentos de arquitectura de computadores.
+- **Logisim:** Es un entorno de simulación lógica digital. Se utiliza para crear y probar circuitos utilizados en las computadoras.
+- **Proteus y Multisim:** Son softwares de diseño de circuitos de circuitos eléctricos, similares a Logisim.
+- **Icarus Verilog:** es un simulador de lenguaje de descripción de hardware (HDL).
 
 
