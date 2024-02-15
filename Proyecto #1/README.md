@@ -8,3 +8,4 @@ Se implementa una compuerta lógica NOT utilizando una compuerta NAND. La entrad
 
 # AND
 
+La implementacion de la compuerta lógica AND se realizo utilizando dos compuertas NAND. La salida de la primera NAND proporciona la negación de las entradas a y b, y luego la segunda NAND calcula la negación de esa salida, produciendo así el resultado de la operación AND lógica de las entradas a y b.
