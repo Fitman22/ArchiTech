@@ -30,7 +30,7 @@ Para el desarrollo de esta funcion simplemente se realizara la funcion Add16 pas
 # ALU 
 Para el desarrollo de la alu necesitamos tener en cuneta los selectores, lo primero que hacemos es analizar los primeros selectores y utilizar un multiplexor para definir si deja la entrada x y la entrada y o si las transforma en un vector de ceros, seguido a esto tendremos un nuevo valor de y y un nuevo valor de x los cuales vamos a negar o no segun el selector para ello, pasamos a un multiplexor el valor de x y x negado y en otro multiplexor el valor de y y y negado, con esto tendremos dos nuevas salidas de x y y, realizamos la funcion add16 y la funcion and16, y las pasamos a otro multiplexor de 16 el cual nos dira si guarda el valor de la add16 o de la and 16, esta salida se negara y se pasara a otro multiplexor el cual elegira si se deja dicha funcion o si se debe negar la funcion, por ultimo se tiene que analizar la salida ya que si es igual a 0 zr debe retornar el valor de 1 y si la salida es menor que 0 la salida ng debe retornar 1.
 ![i4](https://github.com/Fitman22/ArchiTech/assets/70348839/4fe6563a-66f8-45e6-a59a-b8a53687aa16)
-#Bonus
+# BONUS
 **¿Qué tipo de unidades aritmético lógicas existen?**
 
 ALU de propósito general: Estas ALU están diseñadas para realizar una amplia gama de operaciones aritméticas y lógicas, como sumas, restas, multiplicaciones, divisiones, operaciones lógicas AND, OR, NOT, entre otras.
