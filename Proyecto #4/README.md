@@ -1,17 +1,16 @@
 # PROYECTO 4 - ARQUITECTURA DE COMPUTADORES
 
 # MULT.ASM
-El objetivo principal de este programa es realizar la multiplicación de los valores almacenados en los registros **R0** y **R1**, y luego guardar el resultado en el registro **R2**.
 
-En términos más sencillos:
-- **Entrada**: Los valores iniciales se encuentran en los registros **R0** y **R1**.
-- **Proceso**: El programa realiza la multiplicación de estos valores.
-- **Salida**: El resultado se almacena en el registro **R2**.
-
-El código se divide en las siguientes partes:
-1. **Inicialización**: Se establece el valor inicial del registro **R2** en cero.
-2. **Verificación de productos cero**: Se verifica si alguno de los valores en **R0** o **R1** es cero. Si es así, el programa salta al punto de finalización.
-3. **Bucle de multiplicación**: Si ambos valores son distintos de cero, el programa entra en un bucle de multiplicación. En cada iteración, suma el valor actual en **R1** al valor en **R2** y decrementa un contador en **R3**.
-4. **Finalización del programa**: Una vez que el contador en **R3** llega a cero o es negativo, el programa finaliza.
+El programa Mult.asm es un programa en ensamblador diseñado para la arquitectura del computador virtual. Este programa específicamente realiza la multiplicación de dos números enteros positivos sin signo, almacenados en las ubicaciones de memoria `R0` y `R1`, y guardar el resultado en la ubicación de memoria `R2`.
+El programa utiliza un método de multiplicación por sumas sucesivas. La idea básica detrás de este algoritmo es repetir la suma del multiplicando (en este caso `R1`) tantas veces como el multiplicador indique (en este caso `R0`). Por ejemplo, para multiplicar 3 por 5, sumaríamos 5 tres veces: 5 + 5 + 5 = 15.
+Aqui una pequeña explicacion del codigo
+1. Se inicializa el registro `R2` en cero. Este registro se usará para acumular el resultado de la multiplicación.
+2. Se copia el valor de `R0` (el multiplicador) en una variable llamada `count`.
+3. Se establece un bucle etiquetado como `LOOP`. Este bucle repetirá las siguientes operaciones hasta que `count` llegue a cero:
+   a. Se verifica si `count` es cero. Si lo es, el bucle termina y el programa salta a la etiqueta `END`.
+   b. Se suma el valor de `R1` (el multiplicando) al valor acumulado en `R2`. Esto simula una multiplicación.
+   c. Se decrementa `count` para seguir realizando la multiplicación el número de veces indicado por el multiplicador.
+4. Después de salir del bucle, el programa entra en una sección etiquetada como `END`. Esto es simplemente un bucle infinito que detiene la ejecución del programa.
 
 # 
