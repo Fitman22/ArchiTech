@@ -15,4 +15,8 @@ Aqui una pequeña explicacion del codigo
    c. Se decrementa `count` para seguir realizando la multiplicación el número de veces indicado por el multiplicador.
 4. Después de salir del bucle, el programa entra en una sección etiquetada como `END`. Esto es simplemente un bucle infinito que detiene la ejecución del programa.
 
-# 
+# FILL.ASM
+
+El objetivo de Fill.asm es escribir una secuencia específica de comandos en el lenguaje de máquina del computador virtual, específicamente para llenar la pantalla con un patrón determinado. Este programa es parte de la fase de desarrollo del ensamblador, donde los estudiantes deben escribir un programa en lenguaje ensamblador que realizará una tarea específica, como llenar la pantalla con un patrón específico.
+
+El propósito general de Fill.asm, como el de muchos programas de este tipo dentro del contexto del curso "From Nand to Tetris", es ayudar a los estudiantes a entender y practicar los conceptos de lenguaje de máquina, lenguaje ensamblador y arquitectura del computador, permitiéndoles construir gradualmente una pila de abstracciones que los llevarán desde el nivel más básico de hardware hasta un sistema informático completo y funcional.
