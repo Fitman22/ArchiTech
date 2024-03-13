@@ -3,7 +3,9 @@
 # MULT.ASM
 
 El programa Mult.asm es un programa en ensamblador diseñado para la arquitectura del computador virtual. Este programa específicamente realiza la multiplicación de dos números enteros positivos sin signo, almacenados en las ubicaciones de memoria `R0` y `R1`, y guardar el resultado en la ubicación de memoria `R2`.
+
 El programa utiliza un método de multiplicación por sumas sucesivas. La idea básica detrás de este algoritmo es repetir la suma del multiplicando (en este caso `R1`) tantas veces como el multiplicador indique (en este caso `R0`). Por ejemplo, para multiplicar 3 por 5, sumaríamos 5 tres veces: 5 + 5 + 5 = 15.
+
 Aqui una pequeña explicacion del codigo
 1. Se inicializa el registro `R2` en cero. Este registro se usará para acumular el resultado de la multiplicación.
 2. Se copia el valor de `R0` (el multiplicador) en una variable llamada `count`.
