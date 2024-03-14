@@ -1,3 +1,8 @@
+# ¿Por qué el lenguaje de máquina es importante para definir la arquitectura computacional?
+
+El lenguaje de máquina es crucial para establecer la arquitectura computacional, ya que es el idioma que el hardware de la computadora utiliza para procesar instrucciones y datos. Es importante porque permite a la CPU trabajar eficientemente y estructurar los componentes de hardware de manera adecuada. Además, el lenguaje de máquina es el estándar común utilizado para comunicarse con diferentes tipos y modelos de hardware de computadora.
+
+
 # Bit
 
 la plataforma nand2tetris nos facilita el codigo del DFF el cual almacenara el valor de el bit, dicho DFF mandara una señal cada sierto tiempo lo que mandara la salida a un multiplexor normal y eso definira la entrada al DFF, ese va a ser el valor que almacene el bit.
