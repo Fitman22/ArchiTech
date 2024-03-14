@@ -28,3 +28,7 @@ Combina la funcionalidad de la CPU y la memoria para crear un sistema informáti
 `Computer.hdl` especifica cómo se conectan y operan estos componentes para ejecutar programas almacenados en la memoria.Se implementa este archivo para simular un computador virtual completamente funcional que pueda ejecutar programas escritos en el lenguaje de máquina del proyecto "From Nand to Tetris".
 
 Estos tres archivos representan los componentes fundamentales de un sistema informático y son esenciales para la comprensión y construcción del computador virtual en el curso "From Nand to Tetris". Gracias a esto podemos aprender no solo cómo funcionan estos componentes individualmente, sino también cómo interactúan entre sí para ejecutar programas y realizar tareas computacionales.
+
+# Como informático o computista: ¿La arquitectura computacional o la arquitectura del sistema no tiene en cuenta igualmente la arquitectura de software? Justifique su respuesta.
+
+Aunque la arquitectura computacional y la arquitectura del sistema pueden no tener en cuenta directamente la arquitectura de software en términos de hardware físico y organización global del sistema, la arquitectura de software juega un papel fundamental en influir en cómo se diseñan, implementan e integran los componentes de software dentro del sistema informático.
