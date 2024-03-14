@@ -1,5 +1,9 @@
 # PROYECTO 4 - ARQUITECTURA DE COMPUTADORES
 
+# ¿Por qué el lenguaje de máquina es importante para definir la arquitectura computacional?
+
+El lenguaje de máquina es crucial para establecer la arquitectura computacional, ya que es el idioma que el hardware de la computadora utiliza para procesar instrucciones y datos. Es importante porque permite a la CPU trabajar eficientemente y estructurar los componentes de hardware de manera adecuada. Además, el lenguaje de máquina es el estándar común utilizado para comunicarse con diferentes tipos y modelos de hardware de computadora.
+
 # MULT.ASM
 
 El programa Mult.asm es un programa en ensamblador diseñado para la arquitectura del computador virtual. Este programa específicamente realiza la multiplicación de dos números enteros positivos sin signo, almacenados en las ubicaciones de memoria `R0` y `R1`, y guardar el resultado en la ubicación de memoria `R2`.
