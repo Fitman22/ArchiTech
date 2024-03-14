@@ -1,5 +1,10 @@
 # PROYECTO 5 - ARQUITECTURA DE COMPUTADORES
 
+# ¿Qué diferencia ven entre arquitectura computacional, arquitectura de software y arquitectura del sistema? Justifique su respuesta.
+
+la arquitectura computacional se centra en el hardware, la arquitectura de software se centra en el diseño de software y la arquitectura del sistema abarca ambos aspectos, hardware y software, para diseñar y organizar sistemas informáticos completos.
+
+
 # MEMORY.HDL
 La memoria es un componente esencial de cualquier sistema informático, ya que almacena datos y programas que el computador necesita para operar.
 
