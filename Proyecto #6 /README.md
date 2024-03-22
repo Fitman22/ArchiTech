@@ -1,5 +1,7 @@
 #Ensamblador
+
 #Introducción
+
 En este proyecto estaremos realizando el programa de un ensamblador que traduzca programas escritos en el lenguaje ensamblador simbolico Hack a codigo abierto que pueda ejecutarse en la plataforma de hardware construida en proyectos anteriores.
 
 Para profundizar un poco más explicaremos el uso de este. Dependiendo del lenguaje de programación que se utilice (python), el ensamblador debe invocarse usando algo como un "NombreArchivoEnsamblador.asm" donde este es la entrada del ensamblador. El ensamblador crea un archivo de texto de salida llamado fileName.hack, cada linea del archivo de salida consta de dieciséis caracteres de 0 y 1.
@@ -7,6 +9,7 @@ Para profundizar un poco más explicaremos el uso de este. Dependiendo del lengu
 El desarrollo de este ensamblador se realizo en 2 etapas, en las cuales se hicieron uso de programas de prueba que se proporcionaron para respaldar la implementación por etapas y asegurarnos que el ensamblador funcione correctamente.
 
 #Desarrollo
+
 En el proceso de desarrollo de esta actividad, haremos uso del lenguaje Python y aplicaremos el paradigma de programación orientada a objetos. Uno de los objetos clave es el "SymbolTable" (Tabla de Símbolos), que contendrá los símbolos fundamentales del lenguaje, como las 16 direcciones de memoria, el código del teclado, la pantalla, y otros elementos. Este objeto debe ser dinámico para permitir la adición de nuevas direcciones, dependiendo de lo que se encuentre en el código.
 
 Otro componente central es el "Parser" (Analizador), que se encargará de abrir, leer y analizar el archivo. Detectará si una línea corresponde a una instrucción o a un comentario, lo cual hará comparando si la línea comienza con "//". Si se trata de un comentario, eliminará la línea correspondiente. Además, buscará eliminar espacios innecesarios para simplificar la posterior conversión a binario.
