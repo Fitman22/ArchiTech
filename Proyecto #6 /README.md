@@ -1,6 +1,8 @@
-# ENSAMBLADOR
+# PROYECTO 6 - ARQUITECTURA DE COMPUTADORES
 
-# INTRODUCCION
+# Ensamblador
+
+# Imtroduccion
 
 En este proyecto estaremos realizando el programa de un ensamblador que traduzca programas escritos en el lenguaje ensamblador simbolico Hack a codigo abierto que pueda ejecutarse en la plataforma de hardware construida en proyectos anteriores.
 
@@ -8,7 +10,7 @@ Para profundizar un poco más explicaremos el uso de este. Dependiendo del lengu
 
 El desarrollo de este ensamblador se realizo en 2 etapas, en las cuales se hicieron uso de programas de prueba que se proporcionaron para respaldar la implementación por etapas y asegurarnos que el ensamblador funcione correctamente.
 
-# DESARROLLO
+# Desarrollo
 
 En el proceso de desarrollo de esta actividad, haremos uso del lenguaje Python y aplicaremos el paradigma de programación orientada a objetos. Uno de los objetos clave es el "SymbolTable" (Tabla de Símbolos), que contendrá los símbolos fundamentales del lenguaje, como las 16 direcciones de memoria, el código del teclado, la pantalla, y otros elementos. Este objeto debe ser dinámico para permitir la adición de nuevas direcciones, dependiendo de lo que se encuentre en el código.
 
@@ -24,7 +26,7 @@ El ensamblador también debe tener una condición que permita procesar solo arch
 
 Este proceso de ensamblado nos permitirá convertir el código en lenguaje ensamblador a código máquina comprensible por la arquitectura de la computadora.
 
-# PREGUNTAS ¿?
+# Preguntas ¿?
 # 1. Teniendo en cuenta las características del ensamblador, ¿Cuál es la principal limitante que observan? Justifique su respuesta
 
 Para el ensamblador desarrollado en clase, tenemos limitaciones en principio de el uso de recursos limitados y una optimización baja, debido a que este está limitado en el tamaño de bits que puede procesar y, además, depnediendo del archivo puede tener un proceso de traducción mas lento, cosa que empeora cuando el programa debe traducir simbolos.
