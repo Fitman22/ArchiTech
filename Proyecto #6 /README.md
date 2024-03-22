@@ -1,6 +1,6 @@
-# Ensamblador
+# ENSAMBLADOR
 
-# Introducción
+# INTRODUCCION
 
 En este proyecto estaremos realizando el programa de un ensamblador que traduzca programas escritos en el lenguaje ensamblador simbolico Hack a codigo abierto que pueda ejecutarse en la plataforma de hardware construida en proyectos anteriores.
 
@@ -8,7 +8,7 @@ Para profundizar un poco más explicaremos el uso de este. Dependiendo del lengu
 
 El desarrollo de este ensamblador se realizo en 2 etapas, en las cuales se hicieron uso de programas de prueba que se proporcionaron para respaldar la implementación por etapas y asegurarnos que el ensamblador funcione correctamente.
 
-# Desarrollo
+# DESARROLLO
 
 En el proceso de desarrollo de esta actividad, haremos uso del lenguaje Python y aplicaremos el paradigma de programación orientada a objetos. Uno de los objetos clave es el "SymbolTable" (Tabla de Símbolos), que contendrá los símbolos fundamentales del lenguaje, como las 16 direcciones de memoria, el código del teclado, la pantalla, y otros elementos. Este objeto debe ser dinámico para permitir la adición de nuevas direcciones, dependiendo de lo que se encuentre en el código.
 
@@ -24,6 +24,20 @@ El ensamblador también debe tener una condición que permita procesar solo arch
 
 Este proceso de ensamblado nos permitirá convertir el código en lenguaje ensamblador a código máquina comprensible por la arquitectura de la computadora.
 
+# PREGUNTAS ¿?
 # 1. Teniendo en cuenta las características del ensamblador, ¿Cuál es la principal limitante que observan? Justifique su respuesta
 
 Para el ensamblador desarrollado en clase, tenemos limitaciones en principio de el uso de recursos limitados y una optimización baja, debido a que este está limitado en el tamaño de bits que puede procesar y, además, depnediendo del archivo puede tener un proceso de traducción mas lento, cosa que empeora cuando el programa debe traducir simbolos.
+
+# Bonus: ¿Por qué es tan importante el ensamblador?
+
+El ensamblador es una herramienta esencial en el desarrollo de software para plataformas específicas, como es el caso del lenguaje de ensamblaje Hack para la arquitectura de la computadora Hack. Su importancia radica en varios aspectos:
+
+El ensamblador traduce el código escrito en un lenguaje de ensamblaje legible por humanos a código de máquina ejecutable por la CPU. Este paso es fundamental para que el hardware pueda entender y ejecutar las instrucciones del programa.
+
+Los ensambladores modernos suelen incluir optimizaciones que mejoran el rendimiento del código generado. Estas optimizaciones pueden incluir la reorganización de instrucciones para reducir el número de ciclos de CPU necesarios o la sustitución de secuencias de instrucciones por otras más eficientes.
+
+El ensamblador permite a los programadores interactuar directamente con la arquitectura subyacente del hardware, lo que proporciona un mayor control sobre los recursos y la ejecución del programa. Esto es especialmente importante en sistemas embebidos y en aplicaciones que requieren un alto rendimiento.
+
+Escribir código en ensamblador ayuda a los programadores a comprender mejor cómo funciona el hardware subyacente, lo que puede ser útil para resolver problemas de rendimiento, depurar problemas de bajo nivel o realizar ingeniería inversa en sistemas existentes.
+
