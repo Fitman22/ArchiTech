@@ -1,7 +1,25 @@
 # PROYECTO 9 - ARQUITECTURA DE COMPUTADORES
-
-# TETRIS
-![Captura de pantalla 2024-04-25 131503](https://github.com/Fitman22/ArchiTech/assets/124414206/fcbf6a95-db8b-4b71-92cf-678c004c3b84)
+# TicTacToe (Tres en Raya)
+Clase Player:
+  Representa a un jugador del juego. Cada jugador tiene un símbolo asociado X o O
+Clase Board:
+  Representa el tablero de juego, que es una cuadrícula de 3x3
+  Tiene un array de 9 elementos para representar las casillas del tablero
+Métodos:
+  initBoard(): Inicializa el tablero con espacios en blanco
+  printBoard(): Imprime el tablero en la consola
+  isValidMove(position): Verifica si una posición dada en el tablero está disponible para marcar
+  markMove(position, symbol): Marca una posición en el tablero con el símbolo del jugador actual
+  isWinner(symbol): Verifica si el jugador actual ha ganado el juego
+  isFull(): Verifica si el tablero está lleno (empate)
+Clase TicTacToe:
+  Controla el flujo principal del juego
+  Tiene instancias de Player y Board
+Método startGame():
+  Inicializa el tablero y lo muestra
+  Inicia un bucle principal para gestionar los turnos de los jugadores
+  Verifica si el juego ha terminado debido a un ganador o empate
+  Permite a los jugadores realizar movimientos válidos alternativamente
 
 # ¿Qué lenguajes interpretadores ademas del Python existen?
   # JavaScript:
