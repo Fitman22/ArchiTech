@@ -2,19 +2,23 @@
 # TicTacToe (Tres en Raya)
 Clase Player:
   Representa a un jugador del juego. Cada jugador tiene un símbolo asociado X o O
+  
 Clase Board:
   Representa el tablero de juego, que es una cuadrícula de 3x3
   Tiene un array de 9 elementos para representar las casillas del tablero
+
 Métodos:
-  initBoard(): Inicializa el tablero con espacios en blanco
-  printBoard(): Imprime el tablero en la consola
-  isValidMove(position): Verifica si una posición dada en el tablero está disponible para marcar
-  markMove(position, symbol): Marca una posición en el tablero con el símbolo del jugador actual
-  isWinner(symbol): Verifica si el jugador actual ha ganado el juego
-  isFull(): Verifica si el tablero está lleno (empate)
+  - initBoard(): Inicializa el tablero con espacios en blanco
+  - printBoard(): Imprime el tablero en la consola
+  - isValidMove(position): Verifica si una posición dada en el tablero está disponible para marcar
+  - markMove(position, symbol): Marca una posición en el tablero con el símbolo del jugador actual
+  - isWinner(symbol): Verifica si el jugador actual ha ganado el juego
+  - isFull(): Verifica si el tablero está lleno (empate)
+
 Clase TicTacToe:
   Controla el flujo principal del juego
   Tiene instancias de Player y Board
+
 Método startGame():
   Inicializa el tablero y lo muestra
   Inicia un bucle principal para gestionar los turnos de los jugadores
