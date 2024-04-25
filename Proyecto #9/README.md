@@ -21,3 +21,5 @@
   # MATLAB: 
   Utilizado en aplicaciones de computación numérica y técnica, es comúnmente utilizado en ingeniería y ciencias aplicadas.
 
+# Bonus: ¿Qué se debe considerar para proponer un nuevo y buen lenguaje de programación, teniendo en cuenta la arquitectura de computador completa? Justifique su respuesta.
+
