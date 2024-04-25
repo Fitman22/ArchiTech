@@ -25,6 +25,18 @@ Método startGame():
   Verifica si el juego ha terminado debido a un ganador o empate
   Permite a los jugadores realizar movimientos válidos alternativamente
 
+#Desarrolle más el concepto de lenguaje de alto nivel, teniendo en cuenta la diferencia entre lenguajes de programación propiamente dichos e interpretadores.
+Hace varios años programar era una cosa, cuando menos, problemática. Hoy en día tenemos las herramientas para usar nuestro lenguaje y que esta sea entendido por el computador. Y es que esto no es nada sencillo, como tal los computadores no entienden nuestro lenguaje, ellos solo comprenden cadenas de bites (0’s y 1’s). 
+
+De allí viene el uso de los lenguajes de programación de alto nivel, el cual es un lenguaje de programación diseñado para que sea fácil de leer y escribir para las personas. Esta es su principal diferencia con los lenguajes de bajo nivel, como por ejemplo el ensamblador, que están más cerca del lenguaje de la máquina.
+
+Hay un error muy común que comenten las personas en esta área, y es de afirmar que los intérpretes y los leguajes de alto nivel son lo mismo. Los lenguajes de programación propiamente dichos son aquellos que permiten a los programadores escribir instrucciones para realizar tareas específicas. Estos lenguajes se utilizan para crear programas y aplicaciones que pueden realizar una amplia variedad de funciones, desde procesamiento de texto hasta cálculos complejos y gestión de bases de datos.
+
+Por otro lado, un intérprete es un programa que ejecuta instrucciones escritas en un lenguaje de programación de alto nivel. Toma el código fuente escrito por el programador y lo convierte en instrucciones que la computadora puede entender y ejecutar directamente. En lugar de compilar todo el código a lenguaje de máquina de una vez, como lo hace un compilador, el intérprete interpreta y ejecuta cada línea de código una por una en tiempo real.
+
+La principal diferencia entre un lenguaje de programación y un intérprete radica en cómo se ejecuta el código. Con un lenguaje de programación, el código se traduce en un archivo ejecutable que puede ser ejecutado directamente por la computadora. Con un intérprete, el código se interpreta y ejecuta línea por línea, lo que proporciona una mayor flexibilidad y facilidad de depuración, pero a menudo a expensas de la velocidad de ejecución.
+
+
 # ¿Qué lenguajes interpretadores ademas del Python existen?
   # JavaScript:
   Ampliamente utilizado en el desarrollo web para la creación de aplicaciones interactivas en el lado del cliente y del servidor.
