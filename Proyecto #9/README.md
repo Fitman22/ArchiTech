@@ -25,7 +25,8 @@ Método startGame():
   Verifica si el juego ha terminado debido a un ganador o empate
   Permite a los jugadores realizar movimientos válidos alternativamente
 
-#Desarrolle más el concepto de lenguaje de alto nivel, teniendo en cuenta la diferencia entre lenguajes de programación propiamente dichos e interpretadores.
+# Desarrolle más el concepto de lenguaje de alto nivel, teniendo en cuenta la diferencia entre lenguajes de programación propiamente dichos e interpretadores.
+
 Hace varios años programar era una cosa, cuando menos, problemática. Hoy en día tenemos las herramientas para usar nuestro lenguaje y que esta sea entendido por el computador. Y es que esto no es nada sencillo, como tal los computadores no entienden nuestro lenguaje, ellos solo comprenden cadenas de bites (0’s y 1’s). 
 
 De allí viene el uso de los lenguajes de programación de alto nivel, el cual es un lenguaje de programación diseñado para que sea fácil de leer y escribir para las personas. Esta es su principal diferencia con los lenguajes de bajo nivel, como por ejemplo el ensamblador, que están más cerca del lenguaje de la máquina.
