@@ -1,3 +1,27 @@
+class Player {
+    field String symbol;
+
+    constructor Player new(char symbol) {
+        let self = Memory.alloc(1);
+        let constructor = Memory.alloc(3);
+
+        do Memory.write(constructor, "new");
+        do Memory.write(constructor+4, symbol);
+        do Memory.write(constructor+7, 0);
+
+        call String.copy("constructor", constructor);
+        do return self;
+    }
+
+    method void setSymbol(char symbol) {
+        do Memory.write(self, symbol);
+    }
+
+    method char getSymbol() {
+        return Memory.peek(self);
+    }
+}
+
 class Board {
     field Array board;
     field int currentPlayer;
@@ -28,13 +52,126 @@ class Board {
             do Output.printChar(Array.get(board, i));
             if ((i + 1) % 3 = 0) {
                 do Output.println();
-                do Output.printString("-----");
-                do Output.println();
+                if (i != 8) {
+                    do Output.println("---------");
+                }
             }
             else {
-                do Output.printString("|");
+                do Output.printString(" | ");
             }
             let i = i + 1;
+        }
+    }
+
+    method boolean isValidMove(int position) {
+        if (position < 1 or position > 9) {
+            return false;
+        }
+        return Array.get(board, position - 1) = ' ';
+    }
+
+    method void markMove(int position, char symbol) {
+        do Array.set(board, position - 1, symbol);
+    }
+
+    method boolean isWinner(char symbol) {
+        return (
+            // Filas
+            (Array.get(board, 0) = symbol and Array.get(board, 1) = symbol and Array.get(board, 2) = symbol) or
+            (Array.get(board, 3) = symbol and Array.get(board, 4) = symbol and Array.get(board, 5) = symbol) or
+            (Array.get(board, 6) = symbol and Array.get(board, 7) = symbol and Array.get(board, 8) = symbol) or
+            // Columnas
+            (Array.get(board, 0) = symbol and Array.get(board, 3) = symbol and Array.get(board, 6) = symbol) or
+            (Array.get(board, 1) = symbol and Array.get(board, 4) = symbol and Array.get(board, 7) = symbol) or
+            (Array.get(board, 2) = symbol and Array.get(board, 5) = symbol and Array.get(board, 8) = symbol) or
+            // Diagonales
+            (Array.get(board, 0) = symbol and Array.get(board, 4) = symbol and Array.get(board, 8) = symbol) or
+            (Array.get(board, 2) = symbol and Array.get(board, 4) = symbol and Array.get(board, 6) = symbol)
+        );
+    }
+
+    method boolean isFull() {
+        var int i;
+        for (i = 0; i < 9; i = i + 1) {
+            if (Array.get(board, i) = ' ') {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+class TicTacToe {
+    field Player playerX;
+    field Player playerO;
+    field Board board;
+
+    constructor TicTacToe new() {
+        let self = Memory.alloc(3);
+        let constructor = Memory.alloc(7);
+
+        do Memory.write(constructor, "new");
+        call Player.new("constructor", 'X');
+        do Memory.write(constructor+4, 0);
+        call Player.new("constructor", 'O');
+        do Memory.write(constructor+4, 1);
+        call Board.new("constructor");
+        do Memory.write(self, 0);
+        return self;
+    }
+
+    method void startGame() {
+        var boolean gameOver;
+        var char winnerSymbol;
+
+        do board.initBoard();
+        do board.printBoard();
+        let gameOver = false;
+
+        while (not gameOver) {
+            if (board.isFull()) {
+                let gameOver = true;
+                do Output.println("¡Empate!");
+                break;
+            }
+
+            do Output.println("Turno de " + playerX.getSymbol() + ". Ingresa la casilla a marcar (1-9): ");
+            let input = Keyboard.readInt();
+            if (board.isValidMove(input)) {
+                do board.markMove(input, playerX.getSymbol());
+                do board.printBoard();
+                if (board.isWinner(playerX.getSymbol())) {
+                    let gameOver = true;
+                    let winnerSymbol = playerX.getSymbol();
+                    do Output.println("¡El jugador " + winnerSymbol + " ha ganado!");
+                    break;
+                }
+            } else {
+                do Output.println("Casilla inválida. Por favor, elige otra casilla.");
+                continue;
+            }
+
+            if (board.isFull()) {
+                let gameOver = true;
+                do Output.println("¡Empate!");
+                break;
+            }
+
+            do Output.println("Turno de " + playerO.getSymbol() + ". Ingresa la casilla a marcar (1-9): ");
+            let input = Keyboard.readInt();
+            if (board.isValidMove(input)) {
+                do board.markMove(input, playerO.getSymbol());
+                do board.printBoard();
+                if (board.isWinner(playerO.getSymbol())) {
+                    let gameOver = true;
+                    let winnerSymbol = playerO.getSymbol();
+                    do Output.println("¡El jugador " + winnerSymbol + " ha ganado!");
+                    break;
+                }
+            } else {
+                do Output.println("Casilla inválida. Por favor, elige otra casilla.");
+                continue;
+            }
         }
     }
 }
