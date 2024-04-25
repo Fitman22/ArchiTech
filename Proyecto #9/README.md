@@ -25,22 +25,11 @@
 
 Proponer un nuevo y buen lenguaje de programación teniendo en cuenta la arquitectura completa de computadoras implica considerar varios aspectos importantes para asegurar su utilidad, eficiencia y aceptación en la comunidad de desarrollo como:
 
-Claridad y expresividad: El lenguaje debe ser claro y expresivo, permitiendo a los programadores comunicar sus ideas de manera efectiva y concisa. Debe evitar ambigüedades y redundancias, facilitando la comprensión del código.
-
 Eficiencia y rendimiento: El lenguaje debe permitir la escritura de código eficiente que pueda ejecutarse de manera rápida y utilizar eficazmente los recursos del sistema, como la memoria y la CPU.
-Abstracción adecuada: Debe proporcionar un nivel adecuado de abstracción para permitir a los programadores concentrarse en la lógica del problema en lugar de preocuparse por detalles de bajo nivel de la arquitectura de la computadora.
-
-Soporte para programación concurrente y paralela: Dado que la mayoría de los sistemas modernos aprovechan la computación paralela y concurrente, el lenguaje debe proporcionar características y herramientas para facilitar el desarrollo de aplicaciones que aprovechen estas capacidades.
 
 Seguridad: El lenguaje debe incluir características que ayuden a prevenir vulnerabilidades de seguridad, como la gestión segura de la memoria y la detección de errores en tiempo de compilación.
 
 Portabilidad: Debería ser posible ejecutar programas escritos en el lenguaje en una variedad de plataformas y arquitecturas de hardware sin modificaciones significativas.
-
-Compatibilidad con la infraestructura existente: Debería ser posible integrar el nuevo lenguaje con bibliotecas y frameworks existentes, así como con herramientas de desarrollo populares.
-
-Documentación y soporte comunitario: Es importante proporcionar una documentación clara y completa, así como fomentar una comunidad activa de desarrolladores que puedan proporcionar soporte y recursos adicionales.
-
-Facilidad de aprendizaje y adopción: El lenguaje debe ser fácil de aprender para los nuevos programadores y ofrecer una curva de aprendizaje suave para aquellos que ya están familiarizados con otros lenguajes.
 
 Modelo de memoria: El lenguaje debe tener características que permitan un manejo eficiente de la memoria, teniendo en cuenta la jerarquía de memoria del sistema (caché, RAM, disco). Un buen lenguaje minimiza el uso de la memoria y proporciona herramientas para gestionar la asignación y liberación de memoria de manera segura y eficiente.
 
