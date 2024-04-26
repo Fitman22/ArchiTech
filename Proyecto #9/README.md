@@ -3,12 +3,19 @@
 ![Captura de pantalla 2024-04-25 213653](https://github.com/Fitman22/ArchiTech/assets/124414206/f2cdca71-a539-427a-8015-c93184487e76)
 
 El juego del tres en raya en Jack se implementa utilizando varias clases y archivos de utilidades. He aquí un breve resumen de cada archivo:
+
 **TicTacToeGame.jack:** Esta clase es el controlador principal del juego. Inicializa el juego, maneja la entrada del usuario, y gestiona el bucle de juego. Utiliza las clases Board, Piece, InputUtil y Random para implementar la lógica del juego.
-Random.jack: Esta clase proporciona métodos para generar números aleatorios. Se utiliza en la clase TicTacToeGame para seleccionar aleatoriamente el primer jugador.
-Piece.jack: Esta clase representa las piezas del juego (X o O). Tiene atributos para el tipo de pieza, anchura y altura. La clase proporciona métodos para dibujar las piezas y obtener su tipo.
-Main.jack: Esta clase es el punto de entrada del juego. Inicializa el juego e inicia el bucle de juego. Utiliza la clase TicTacToeGame para gestionar el juego.
-InputUtil.jack: Esta clase proporciona métodos para manejar la entrada del usuario. Se utiliza en la clase TicTacToeGame para obtener la entrada del usuario y manejar los eventos del juego.
-Board.jack: Esta clase representa el tablero de juego y gestiona el estado del juego. Tiene atributos para las dimensiones del tablero, la matriz del tablero, y las banderas para las condiciones de ganar y empatar. La clase proporciona métodos para crear un nuevo tablero, limpiar el tablero, evaluar el estado del tablero, y manejar movimientos y empates.
+
+**Random.jack:** Esta clase proporciona métodos para generar números aleatorios. Se utiliza en la clase TicTacToeGame para seleccionar aleatoriamente el primer jugador.
+
+**Piece.jack:** Esta clase representa las piezas del juego (X o O). Tiene atributos para el tipo de pieza, anchura y altura. La clase proporciona métodos para dibujar las piezas y obtener su tipo.
+
+**Main.jack:** Esta clase es el punto de entrada del juego. Inicializa el juego e inicia el bucle de juego. Utiliza la clase TicTacToeGame para gestionar el juego.
+
+**InputUtil.jack:** Esta clase proporciona métodos para manejar la entrada del usuario. Se utiliza en la clase TicTacToeGame para obtener la entrada del usuario y manejar los eventos del juego.
+
+**Board.jack:** Esta clase representa el tablero de juego y gestiona el estado del juego. Tiene atributos para las dimensiones del tablero, la matriz del tablero, y las banderas para las condiciones de ganar y empatar. La clase proporciona métodos para crear un nuevo tablero, limpiar el tablero, evaluar el estado del tablero, y manejar movimientos y empates.
+
 El juego comienza creando un nuevo objeto Tablero e inicializando las piezas del juego. A continuación, el jugador realiza movimientos seleccionando una casilla vacía del tablero. El estado del juego se evalúa después de cada movimiento, y si hay un ganador o un empate, el juego termina. El juego también se puede terminar pulsando la tecla «0».
 
 
