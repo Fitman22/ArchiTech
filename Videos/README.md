@@ -2,7 +2,7 @@
 # VIDEO - CODIGO DE ETICA ACM
 
 *
-*
+* Brandon David Jaimes Castro(2211859) --> https://youtu.be/pfxUJ-wX2Do
 * Jose Daniel Figueroa Arenas (Cod. 2211889) --> https://youtu.be/UDLsqMOgCAc
 *
 * 
